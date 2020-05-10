@@ -3,32 +3,35 @@
 </div>
 
 
-obs-ios-camera-source for linx(tested on ubuntu 20.04)
+## obs-ios-camera-source for linx
+### (tested on ubuntu 20.04)
 
 this repository is originally cloned from https://github.com/wtsnz/obs-ios-camera-source
 it's only have releases for windows and mac. but this fork https://github.com/dougg3/obs-ios-camera-source have linx support but it's also not bulding in ubuntu 20.04. I made this to compile obs-ios-camera plugin on ubuntu 20.04
 
-## I have to install
+### I have to install
 
-apt install ffmpeg
-apt-get install cmake
-apt-get install g++
-apt-get install libobs0
-apt-get install libobs-dev
-apt-get install libavcodec-dev
-apt install qtbase5-dev
+    apt install ffmpeg
+    apt-get install cmake
+    apt-get install g++
+    apt-get install libobs0
+    apt-get install libobs-dev
+    apt-get install libavcodec-dev
+    apt install qtbase5-dev
 
-Changed 
-external/FindLibObs.cmake
+### changes
 
-Add(from https://github.com/Palakis/obs-ndi/blob/ac0a3be1709c18a92a381e480d3ceae5e2dd2b22/external/ObsPluginHelpers.cmake)
-external/ObsPluginHelpers.cmake
+    Changed 
+    external/FindLibObs.cmake
 
-## Compile
+    Add(from https://github.com/Palakis/obs-ndi/blob/ac0a3be1709c18a92a381e480d3ceae5e2dd2b22/external/ObsPluginHelpers.cmake)
+    external/ObsPluginHelpers.cmake
 
-cd build
-cmake .. -DLIBOBS_INCLUDE_DIR=../cmake
-make -j4
+### Compile
+
+    cd build
+    cmake .. -DLIBOBS_INCLUDE_DIR=../cmake
+    make -j4
 
 ==============
 Use your iPhone camera as a video source in OBS Studio and stream high quality video from your iPhone's camera over USB.
