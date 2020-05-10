@@ -51,21 +51,3 @@ Use your iPhone camera as a video source in OBS Studio and stream high quality v
 [![Build Status](https://travis-ci.org/wtsnz/obs-ios-camera-source.svg?branch=master)](https://travis-ci.org/wtsnz/obs-ios-camera-source)
 
 To use this you use the [accompanying iOS app](https://will.townsend.io/products/obs-iphone/) to begin streaming in OBS.
-
-
-## Downloads
-
-Binaries for Windows and Mac are available in the [Releases](https://github.com/wtsnz/obs-ios-camera-source/releases) section.
-
-## Building
-
-You can run the CI scripts to build it. They will clone and build OBS Studio prior to building this plugin.
-
-    ./CI/install-dependencies-macos.sh
-    ./CI/install-build-obs-macos.sh
-    ./CI/build-macos.sh
-    ./CI/package-macos.sh
-
-
-## Special thanks
-- The entire [obs-websockets](https://github.com/Palakis/obs-websocket) project for providing a stella example of an obs plugin build pipeline!
