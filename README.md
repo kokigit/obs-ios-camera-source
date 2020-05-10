@@ -3,7 +3,7 @@
 </div>
 
 
-## obs-ios-camera-source for linx
+## obs-ios-camera-source for linux
 ### (tested on ubuntu 20.04)
 
 this repository is originally cloned from https://github.com/wtsnz/obs-ios-camera-source
