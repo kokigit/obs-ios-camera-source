@@ -34,6 +34,16 @@ it's only have releases for windows and mac. but this fork https://github.com/do
     cmake .. -DLIBOBS_INCLUDE_DIR=../cmake
     make -j4
 
+After doing this, I manually created the directory structure for the plugin and put it in ~/.config/obs-studio/plugins:
+
+    mkdir -p ~/.config/obs-studio/plugins
+    cd ~/.config/obs-studio/plugins
+    mkdir -p obs-ios-camera-source/data/locale/
+    touch obs-ios-camera-source/data/locale/en-US.ini 
+    mkdir -p obs-ios-camera-source/bin/64bit/
+
+    cp build/obs-ios-camera-source.so ~/.config/obs-studio/plugins/obs-ios-camera-source/bin/64bit/
+   
 ==============
 Use your iPhone camera as a video source in OBS Studio and stream high quality video from your iPhone's camera over USB.
 
