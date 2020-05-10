@@ -29,6 +29,7 @@ it's only have releases for windows and mac. but this fork https://github.com/do
 
 ### Compile
 
+    mkdir build
     cd build
     cmake .. -DLIBOBS_INCLUDE_DIR=../cmake
     make -j4
