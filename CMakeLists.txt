@@ -8,12 +8,21 @@ set(CMAKE_AUTOUIC ON)
 set (CMAKE_CXX_STANDARD 17)
 
 include(external/FindLibObs.cmake)
-
+find_package(Qt5 COMPONENTS Widgets)
 find_package(LibObs REQUIRED)
 
-find_package(FFmpeg REQUIRED COMPONENTS avcodec avutil)
+# find_package(FFmpeg REQUIRED COMPONENTS avcodec avutil)
 # find_ffmpeg_library(avcodec)
 # find_ffmpeg_library(avutil)
+
+find_library( AVCODEC_LIBRARY avcodec )
+find_library( AVUTIL_LIBRARY avutil )
+
+include_directories(
+"${LIBOBS_INCLUDE_DIR}/../UI/obs-frontend-api"
+${AVCODEC_INCLUDE_DIRS}
+${AVUTIL_INCLUDE_DIRS}
+)
 
 if(WIN32)
 	find_library(WS2_32_LIBRARY ws2_32)
