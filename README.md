@@ -10,10 +10,12 @@ it's only have releases for windows and mac. but this fork https://github.com/do
 
 ## I have to install
 
+apt install ffmpeg
 apt-get install cmake
 apt-get install g++
 apt-get install libobs0
 apt-get install libobs-dev
+apt-get install libavcodec-dev
 apt install qtbase5-dev
 
 Changed 
